@@ -1,0 +1,465 @@
+/* --------------------RESET CSS------------------- */
+*{
+     margin:0;
+     padding:0;
+     box-sizing: border-box;
+     font-size:15px;
+     font-family:sans-serif;
+}
+/* --------------------GENERAL PROPERTIES CSS------------------- */
+:root{
+     --primary-color:#05C46B;
+     --primary-text:#FFFFFF;
+     --secondary-text:#252525;
+     --secondary-color:#888888;
+     --border-color:#E8E8E8;
+     --background-color:#F8F8F8;
+}
+
+.active{
+     color:var(--primary-color) !important;
+     visibility:visible !important;
+}
+
+/* --------------------HEADER CSS------------------- */
+#header{
+     background-image:url(/assets/img/background-footer/bg-pattern1.png);
+     background-position: center;
+     background-repeat: repeat-y;
+     position: relative;
+}
+#header .headers{
+     display:flex;
+     justify-content:space-between;
+     align-items:center;
+     margin:0 200px;
+     background-color:var(--primary-text);
+     opacity: 0.95;
+}
+#header .headers .headers-nav{
+     display:flex;
+     align-items:center;
+}
+#header .headers .headers-list{
+     display:flex;
+     list-style: none;
+     position: relative;
+}
+#header .headers .headers-items{
+     margin-right:15px;
+     padding:34px 0;
+}
+#header .headers .headers-links,
+#header .headers-sublist__links{
+     text-decoration: none;
+     color:var(--secondary-text);
+     text-transform: uppercase;
+     transition:all .7s ease;
+}
+#header .headers .headers-icons,
+#header .headers-sublist__icons{
+     visibility: hidden;
+     transition:.5s ease;
+}
+#header .headers .headers-items:hover>.headers-links,
+#header .headers-sublist__items:hover>.headers-sublist__links{
+     color:var(--primary-color) !important;
+}
+#header .headers .headers-items:hover>.headers-icons,
+#header .headers-sublist__items:hover>.headers-sublist__icons{
+     visibility:visible;
+     color:var(--primary-color);
+}
+#header .headers-search{
+     padding:10px 10px;
+     border:1px solid var(--secondary-color);
+     border-radius:50%;
+     transition:.4s ease-in;
+}
+#header .headers-search:hover{
+     border:1px solid var(--primary-color);
+     color:var(--primary-color);
+     cursor: pointer;
+}
+#header .headers-items:hover>.headers-sublist{
+     display:block;
+}
+#header .headers-sublist{
+     display:none;
+     position:absolute;
+     top:85px;
+     list-style:none;
+     border-top:1px solid var(--primary-color);
+     left:80px;
+     background-color:var(--primary-text);
+}
+#header .headers-sublist__items{
+     padding:25px 10px;
+     width:225px;
+}
+#header .headers-sublist__links{
+     text-decoration: none;
+}
+#header .input-search{
+     position:absolute;
+     top:85px;
+     right:150px;
+     display:none;
+}
+#header .input-search input[type='text']{
+     width:100%;
+     height:60px;
+     border:1px solid var(--secondary-color);
+     outline:none;
+     padding:0 65px 0 15px;
+}
+#header .input-search .input-reseult{
+     padding:21px 22.5px;
+     background-color:var(--primary-color);
+     color:var(--primary-text);
+     border:1px solid var(--secondary-color);
+     position:absolute;
+}
+#header .sub-menu{
+     display:none;
+}
+#header .subnav-menu{
+     display:none;
+}
+/* --------------------BANNER CSS------------------- */
+#banner .banner-slider{
+     background:url(/assets/img/slider/slider-bg1.jpg);
+     max-width:100%;
+     height:660px;
+     background-position:center;
+     background-repeat:no-repeat;     
+}
+
+#banner .banner-selection{
+     margin:0 180px;
+     padding:0 15px;
+     position: relative;
+     top:100px;
+}
+#banner .banner-content .title{
+     padding:30px;
+     display:inline-block;
+     font-size:50px;
+     background-color:var(--primary-color);
+     color:var(--primary-text);
+}
+#banner .banner-content .title span{
+     font-size:18px;
+}
+#banner .banner-content .title b{
+     font-size:50px;
+     font-weight:400;
+}
+#banner .description{
+     padding:30px;
+     display:inline-block;
+     background-color:var(--primary-text);
+     color:var(--secondary-text);
+}
+#banner .banner-button{
+     margin-top:40px;
+}
+#banner .banner-button .about-btn,
+#banner .banner-button .course-btn{
+     padding:14px 30px;
+     text-align:center;
+     text-decoration: none;
+     color:var(--secondary-text);
+     text-transform: uppercase;
+}
+#banner .banner-button .about-btn,
+#course .course-img .registration .registration-now{
+     display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: var(--primary-color);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+#banner .banner-button .about-btn::before,
+#course .course-img .registration .registration-now::before{
+     content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--primary-text);
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+#banner .banner-button .about-btn:hover,
+#banner .banner-button .about-btn:focus,
+#banner .banner-button .about-btn:active,
+#course .course-img .registration .registration-now:hover,
+#course .course-img .registration .registration-now:focus,
+#course .course-img .registration .registration-now:active{
+     background-color: var(--primary-color);
+     cursor: pointer;
+     color:var(--primary-text);
+}
+#banner .banner-button .about-btn:hover:before,
+#banner .banner-button .about-btn:focus:before,
+#banner .banner-button .about-btn:active:before ,
+#course .course-img .registration .registration-now:hover:before,
+#course .course-img .registration .registration-now:focus:before,
+#course .course-img .registration .registration-now:active:before{
+     transform: scaleX(0);
+}
+#banner .banner-button .course-btn{
+     display: inline-block;
+     vertical-align: middle;
+     -webkit-transform: perspective(1px) translateZ(0);
+     transform: perspective(1px) translateZ(0);
+     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+     position: relative;
+     background:var(--primary-color);
+     -webkit-transition-property: color;
+     transition-property: color;
+     -webkit-transition-duration: 0.3s;
+     transition-duration: 0.3s;
+}
+#banner .banner-button .course-btn::before{
+     content: "";
+     position: absolute;
+     z-index: -1;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background:var(--primary-text);
+     -webkit-transform: scaleX(1);
+     transform: scaleX(0);
+     -webkit-transform-origin: 50%;
+     transform-origin: 50%;
+     -webkit-transition-property: transform;
+     transition-property: transform;
+     -webkit-transition-duration: 0.3s;
+     transition-duration: 0.3s;
+     -webkit-transition-timing-function: ease-out;
+     transition-timing-function: ease-out;
+}
+#banner .banner-button .course-btn:hover,
+#banner .banner-button .course-btn:focus,
+#banner .banner-button .course-btn:active{
+     cursor: pointer;
+     color:var(--secondary-text);
+}
+#banner .banner-button .course-btn:hover:before,
+#banner .banner-button .course-btn:focus:before,
+#banner .banner-button .course-btn:active:before {
+     transform: scaleX(1);
+}
+/* --------------------COURSE CSS------------------- */
+#course{
+     background-color:var(--background-color);
+}
+#course .our-course{
+     margin:0 200px;
+     padding:90px 0;
+}
+#course .our-course .our-course__top{
+     padding:0 15px;
+     text-align: center;
+     position: relative;
+}
+#course .our-course .our-course__top h3{
+     margin-bottom:10px;
+     font-size:34px;
+}
+#course .our-course .our-course__top span{
+     font-size:34px;
+     font-weight:300;
+}
+#course .our-course .our-course__top p{
+     color:var(--secondary-color);
+
+}
+#course  .course-icons{
+     margin-top:10px;
+     padding:15px;
+     background-color:var(--primary-color);
+     border-radius:50%;
+     color:var(--primary-text);
+}
+#course .line{
+     display:flex;
+     align-items:center;
+     justify-content:center;
+}
+#course .line-left,
+#course .line-right{
+     position: relative;
+     width:30px;
+     border:1px solid var(--primary-color);
+     top:5px;
+}
+#course .our-course__content{
+     margin-top:30px;
+     display:flex;
+     flex-wrap:wrap;
+}
+#course .course-items{
+     width:360px;
+     padding:12px;
+     margin:0 10px;
+     position: relative;
+     box-shadow: 0px 0px 10px rgb(0 0 0 / 15%);
+     margin-top:30px;
+}
+#course .course-items .course-img{
+     position: relative;
+}
+#course .course-img .registration{
+     position: absolute;
+     top:0;
+     left:0;
+     width:100%;
+     height:100%;
+     background-color:rgba(0,0,0,.5);
+     display:none;
+    
+}
+#course .course-items .course-img:hover>.registration{
+     display:block;
+}
+#course .course-img .registration .registration-now{
+     position: absolute;
+     top:50%;
+     left:50%;
+     transform:translate(-50%,-50%);
+     padding:10px 20px;
+     color:var(--secondary-text);
+     text-decoration: none;
+     
+}
+#course .course-items .course-img img{
+     max-width: 100%;
+}
+#course .course-author{
+     display:flex;
+     align-items:center;
+     position: relative;
+}
+#course .course-author img{
+     max-width:100%;
+     border-radius:50%;
+     height:60px;
+     width:60px;
+     position:absolute;
+     bottom:-20px;
+     left:30px;
+     border:5px solid var(--primary-text);
+     box-shadow: 0px 0px 10px rgb(0 0 0 / 15%)
+}
+#course .course-author .price{
+     position:absolute;
+     right:30px;
+     bottom:-15px;
+     padding:10px 15px;
+     background-color:var(--primary-color);
+     color:var(--primary-text);
+     border-radius:20px;
+}
+#course .course-meta{
+     padding:30px 0 20px 0;
+
+}
+#course .course-meta .name{
+     font-weight:700;
+     font-size:18px;
+     transition:.3s ease-in;
+}
+#course .course-meta .name:hover{
+     color:var(--primary-color);
+     cursor: pointer;
+}
+#course .course-meta .description{
+     display:block;
+     padding:20px 0;
+     border-bottom:1px solid var(--border-color);
+     color:var(--secondary-color);
+}
+#course .course-rating{
+     display:inline-flex;
+     color:var(--primary-color);
+}
+#course .course-rating .vote{
+     margin-left:10px;
+}
+#course .course-infomation{
+     padding:15px 0 10px 0;
+     display: flex;
+     flex-wrap:wrap;
+}
+#course .course-infomation .desc{
+     margin-right:10px;
+     transition:.3s ease-in;
+}
+#course .course-infomation .desc:hover{
+     cursor: pointer;
+     color:var(--primary-color);
+}
+/* --------------------INTRODUCE CSS------------------- */
+#introduce .introduce-block{
+     background:url(/assets/img/feature/feature-bg.jpg);
+     width:100%;
+     height:300px;
+     background-size:cover;
+     background-position:center;
+     position: relative;
+}
+#introduce .introduce-item{
+     position:absolute;
+     top:0;
+     left:0;
+     height:100%;
+     width:100%;
+     background-color:rgba(0,0,0,.8);
+}
+#introduce .introudce-list{
+     padding:64px 15px;
+     margin:0 150px;
+     display:flex;
+     list-style:none;
+     align-items:center;
+}
+#introduce .introudce-list .introudce-items{
+     text-align: center;
+     margin:0 15px;
+     color:var(--primary-text);
+}
+#introduce .introudce-list .introudce-icons{
+     padding: 20px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    font-size: 20px;
+}
+#introduce .introudce-list .introudce-name{
+     padding:20px 0;
+     font-size:18px;
+}
+/* --------------------EVENTS CSS------------------- */
+/* --------------------INFORMATION CSS------------------- */
+/* --------------------QUESTION CSS------------------- */
+/* --------------------CLIENT CSS------------------- */
+/* --------------------FOOTER CSS------------------- */

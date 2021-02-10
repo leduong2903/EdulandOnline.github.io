@@ -1,0 +1,281 @@
+/* --------------Medium devices---------------- */
+@media screen and (max-width:991.98px){
+     /* ----------HEADER------------ */
+     #header .headers{
+          margin:0 10px;
+     }
+     #banner .banner-selection{
+          margin:0 10px;
+     }
+     #course .our-course{
+          margin:0;
+     }
+     #course .course-items{
+          width:31%;
+     }
+     #course .course-meta .name{
+          font-size:16px;
+     }
+     #introduce .introudce-list{
+          margin:0;
+     }
+}
+/* --------------Small devices---------------- */
+@media screen and (max-width:767.98px){
+     #header .headers{
+          margin:0 ;
+          padding:16px 0;
+     }
+     #header .headers .headers-list,
+     #header .headers-search{
+          display:none;
+     }
+     #header .sub-menu{
+          display: block;
+          padding:10px 15px;
+          background-color:#05C46B;
+          color:#FFFFFF;
+          transition: .3s ease-in;
+     }
+     #header .sub-menu:hover{
+          cursor: pointer;
+          background-color:#252525;
+     }
+     #header .subnav-menu{
+          display:block;
+     }
+     #header .subnav-menu .subnav-menu{
+          position:absolute;
+          left:0;
+          top:70px;
+          list-style: none;
+          width:100%;
+          z-index: 9999;
+          background-color:#20232E;
+          color:#fff !important;
+          display:none;
+     }
+     #header .subnav-menu-sublist{
+          list-style:none;
+          position: relative;
+          top:15px;
+         display:none;
+     }
+     #header .subnav-menu-sublist__items{
+          position: relative;
+          left:10px;
+          border-top:1px solid #05C46B;
+          padding:15px 10px;
+     }
+     #header .subnav-menu__list{
+          padding:15px 10px;
+          
+     }
+     #header .subnav-menu__links,
+     #header .subnav-menu-sublist__links{
+          color:#fff;
+          text-decoration: none;
+          transition:.3s ease-in;
+     }
+     #header .subnav-menu__list:hover{
+          color:#05C46B;
+          cursor: pointer;
+     }
+     #header .subnav-menu__list:hover>.subnav-menu__links{
+          color:#05C46B;
+     }
+     #banner .banner-selection{
+          margin:0 ;
+     }
+     #banner .banner-content .title{
+          font-size:35px;
+     }
+     #course .our-course__content{
+          justify-content: center;
+     }
+     #course .course-items{
+          width:43%;
+     }
+     #introduce .introudce-list{
+          flex-wrap:wrap;
+     }
+     #introduce .introudce-list .introudce-items{
+          width:100%;
+          margin-top:30px;
+     }
+     #introduce .introduce-block{
+          height:900px;
+     }
+}
+/* --------------X-Small devices---------------- */
+@media screen and (max-width:575.98px){
+     #header .headers{
+          padding:16px 0;
+     }
+     #header .headers .headers-list{
+          display:none;
+     }
+     #header .headers-search{
+          display:none;
+     }
+     #header .sub-menu{
+          display: block;
+          padding:10px 15px;
+          background-color:#05C46B;
+          color:#FFFFFF;
+          transition: .3s ease-in;
+     }
+     #header .sub-menu:hover{
+          cursor: pointer;
+          background-color:#252525;
+     }
+     #header .subnav-menu{
+          display:block;
+     }
+     #header .subnav-menu .subnav-menu{
+          position:absolute;
+          left:0;
+          top:70px;
+          list-style: none;
+          width:100%;
+          z-index: 9999;
+          background-color:#20232E;
+          color:#fff !important;
+          display:none;
+     }
+     #header .subnav-menu-sublist{
+          list-style:none;
+          position: relative;
+          top:15px;
+         display:none;
+     }
+     #header .subnav-menu-sublist__items{
+          position: relative;
+          left:10px;
+          border-top:1px solid #05C46B;
+          padding:15px 10px;
+     }
+     #header .subnav-menu__list{
+          padding:15px 10px;
+          
+     }
+     #header .subnav-menu__links,
+     #header .subnav-menu-sublist__links{
+          color:#fff;
+          text-decoration: none;
+          transition:.3s ease-in;
+     }
+     #header .subnav-menu__list:hover{
+          color:#05C46B;
+          cursor: pointer;
+     }
+     #banner .banner-content .title{
+          font-size:25px;
+     }
+     #header .subnav-menu__list:hover>.subnav-menu__links{
+          color:#05C46B;
+     }
+     #course .course-items{
+          width:90%;
+     }
+     #introduce .introudce-list .introudce-items{
+          width:100%;
+     }
+     #introduce .introduce-block{
+          height:900px;
+     }
+}
+/* --------------XS-Small devices---------------- */
+@media screen and (max-width:479.08px){
+     #header .headers{
+          padding:16px 0;
+     }
+     #header .headers .headers-list{
+          display:none;
+     }
+     #header .headers-search{
+          display:none;
+     }
+     #header .sub-menu{
+          display: block;
+          padding:10px 15px;
+          background-color:#05C46B;
+          color:#FFFFFF;
+          transition: .3s ease-in;
+     }
+     #header .sub-menu:hover{
+          cursor: pointer;
+          background-color:#252525;
+     }
+     #header .subnav-menu{
+          display:block;
+     }
+     #header .subnav-menu .subnav-menu{
+          position:absolute;
+          left:0;
+          top:70px;
+          list-style: none;
+          width:100%;
+          z-index: 9999;
+          background-color:#20232E;
+          color:#fff !important;
+          display:none;
+     }
+     #header .subnav-menu-sublist{
+          list-style:none;
+          position: relative;
+          top:15px;
+         display:none;
+     }
+     #header .subnav-menu-sublist__items{
+          position: relative;
+          left:10px;
+          border-top:1px solid #05C46B;
+          padding:15px 10px;
+     }
+     #header .subnav-menu__list{
+          padding:15px 10px;
+          
+     }
+     #header .subnav-menu__links,
+     #header .subnav-menu-sublist__links{
+          color:#fff;
+          text-decoration: none;
+          transition:.3s ease-in;
+     }
+     #header .subnav-menu__list:hover{
+          color:#05C46B;
+          cursor: pointer;
+     }
+     #header .subnav-menu__list:hover>.subnav-menu__links{
+          color:#05C46B;
+     }
+     #banner .banner-selection{
+          margin:0;
+     }
+     #banner .banner-button .course-btn{
+          margin-top:10px;
+     }
+     #banner .banner-content .title{
+          padding:15px;
+          font-size:30px;
+     }
+     #banner .banner-content .title span{
+          font-size:15px;
+     }
+     #banner .banner-content .title b{
+          font-size:25px;
+     }
+     #banner .description{
+          padding:15px;
+     }
+     #course .course-items{
+          width:90%;
+     }
+     #introduce .introudce-list .introudce-items{
+          width:100%;
+     }
+     #introduce .introduce-block{
+          height:1000px;
+     }
+}
